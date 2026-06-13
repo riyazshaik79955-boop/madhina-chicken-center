@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>MADHINA</h2>
+
+<ul>
+<li><a href="dashboard.html">📊 Dashboard</a></li>
+<li><a href="add-record.html">➕ Add Record</a></li>
+<li><a href="history.html">📜 History</a></li>
+<li><a href="reports.html">📈 Reports</a></li>
+<li><a href="#">⚙ Settings</a></li>
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>📜 Daily Records History</h1>
+
+<div id="historyContainer"></div>
+
+</div>
+
+</div>
+
+<script type="module" src="history.js"></script>
+
+</body>
+</html>
+<div class="search-box">
+
+<input type="date" id="searchDate">
+
+<button onclick="searchRecord()">
+🔍 Search
+</button>
+
+<button onclick="loadHistory()">
+📋 Show All
+</button>
+
+</div>
+
+<div id="historyContainer"></div>
+<script src="auth.js"></script>
+<script type="module" src="history.js"></script>

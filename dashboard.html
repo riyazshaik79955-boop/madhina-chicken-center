@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADHINA Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2>MADHINA</h2>
+
+        <ul>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="add-record.html">➕ Add Record</a></li>
+            <li><a href="history.html">📜 History</a></li>
+            <li><a href="reports.html">📈 Reports</a></li>
+            <li><a href="#">⚙️ Settings</a></li>
+
+            <li>
+                <a href="#" onclick="logout()">
+                🚪 Logout
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+
+        <h1>🐔 MADHINA CHICKEN CENTER</h1>
+
+        <div id="alertBox" class="alert-box" style="display:none;">
+            ⚠ LOW STOCK ALERT
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🐔 Big Remaining</h3>
+                <p id="bigRemaining">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>🐔 Small Remaining</h3>
+                <p id="smallRemaining">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Cash</h3>
+                <p id="cashAmount">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 UPI</h3>
+                <p id="upiAmount">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>💵 Total Collection</h3>
+                <p id="totalCollection">Loading...</p>
+            </div>
+
+        </div>
+
+        <div class="welcome-box">
+
+            <h2>📅 Today's Summary</h2>
+
+            <p id="todayBigSold">
+                🐔 Big Sold Today: Loading...
+            </p>
+
+            <p id="todaySmallSold">
+                🐔 Small Sold Today: Loading...
+            </p>
+
+            <p id="todayCash">
+                💰 Cash Today: Loading...
+            </p>
+
+            <p id="todayUPI">
+                📱 UPI Today: Loading...
+            </p>
+
+            <p id="todayTotal">
+                💵 Total Today: Loading...
+            </p>
+
+        </div>
+
+        <br>
+
+        <div class="welcome-box">
+
+            <h2>Today's Overview</h2>
+
+            <p>
+                Latest stock and collection details are loaded automatically from Firebase.
+            </p>
+
+            <br>
+
+            <p>
+                🐔 Fresh Chicken • Daily Stock Tracking • Smart Reports
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>

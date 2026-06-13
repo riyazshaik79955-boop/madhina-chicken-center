@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Record - MADHINA</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>MADHINA</h2>
+
+        <ul>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="add-record.html">➕ Add Record</a></li>
+            <li><a href="history.html">📜 History</a></li>
+            <li><a href="reports.html">📈 Reports</a></li>
+            <li><a href="#">⚙ Settings</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1>➕ Add Daily Record</h1>
+
+        <div class="record-form">
+
+            <div class="date-box">
+                <h3>📅 Today's Date</h3>
+                <p id="todayDate"></p>
+            </div>
+
+            <h2>🐔 Big Broiler</h2>
+
+            <input type="number"
+                   id="bigReceived"
+                   placeholder="Received Birds">
+
+            <input type="number"
+                   id="bigSold"
+                   placeholder="Sold Birds">
+
+            <input type="number"
+                   id="bigDead"
+                   placeholder="Dead / Loss Birds">
+
+            <h2>🐔 Small Broiler</h2>
+
+            <input type="number"
+                   id="smallReceived"
+                   placeholder="Received Birds">
+
+            <input type="number"
+                   id="smallSold"
+                   placeholder="Sold Birds">
+
+            <input type="number"
+                   id="smallDead"
+                   placeholder="Dead / Loss Birds">
+
+            <h2>💰 Collection</h2>
+
+            <input type="number"
+                   id="cash"
+                   placeholder="Cash Amount">
+
+            <input type="number"
+                   id="upi"
+                   placeholder="UPI Amount">
+
+            <button id="saveBtn">
+                SAVE RECORD
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+const today = new Date();
+
+document.getElementById("todayDate").innerText =
+today.toLocaleDateString('en-IN',{
+day:'numeric',
+month:'long',
+year:'numeric'
+});
+</script>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="add-record.js"></script>
+
+</body>
+</html>
