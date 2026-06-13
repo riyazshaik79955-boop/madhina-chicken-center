@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>MADHINA</h2>
+
+<ul>
+<li><a href="dashboard.html">📊 Dashboard</a></li>
+<li><a href="add-record.html">➕ Add Record</a></li>
+<li><a href="history.html">📜 History</a></li>
+<li><a href="reports.html">📈 Reports</a></li>
+<li><a href="#">⚙ Settings</a></li>
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>📈 Reports</h1>
+
+<button id="exportBtn">
+📄 Download Report
+</button>
+
+<br><br>
+
+<div class="cards">
+
+<div class="card">
+<h3>💰 Total Cash</h3>
+<p id="totalCash">Loading...</p>
+</div>
+
+<div class="card">
+<h3>📱 Total UPI</h3>
+<p id="totalUPI">Loading...</p>
+</div>
+
+<div class="card">
+<h3>💵 Total Collection</h3>
+<p id="grandTotal">Loading...</p>
+</div>
+
+<div class="card">
+<h3>🐔 Big Broiler Sold</h3>
+<p id="bigSoldTotal">Loading...</p>
+</div>
+
+<div class="card">
+<h3>🐔 Small Broiler Sold</h3>
+<p id="smallSoldTotal">Loading...</p>
+</div>
+
+<div class="card">
+<h3>📅 Total Records</h3>
+<p id="recordCount">Loading...</p>
+</div>
+
+<div class="card">
+<h3>📈 This Month Collection</h3>
+<p id="monthCollection">Loading...</p>
+</div>
+
+<div class="card">
+<h3>💰 This Month Cash</h3>
+<p id="monthCash">Loading...</p>
+</div>
+
+<div class="card">
+<h3>📱 This Month UPI</h3>
+<p id="monthUPI">Loading...</p>
+</div>
+
+<div class="card">
+<h3>🐔 This Month Big Sold</h3>
+<p id="monthBigSold">Loading...</p>
+</div>
+
+<div class="card">
+<h3>🐔 This Month Small Sold</h3>
+<p id="monthSmallSold">Loading...</p>
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+<h3>📈 Collection Trend Graph</h3>
+<canvas id="salesChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="reports.js"></script>
+
+</body>
+</html>
+<script src="auth.js"></script>
+<script type="module" src="reports.js"></script>
