@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Record</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>MADHINA</h2>
+
+<ul>
+<li><a href="dashboard.html">📊 Dashboard</a></li>
+<li><a href="add-record.html">➕ Add Record</a></li>
+<li><a href="history.html">📜 History</a></li>
+<li><a href="reports.html">📈 Reports</a></li>
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>✏ Edit Record</h1>
+
+<div class="record-form">
+
+<input type="number" id="bigReceived" placeholder="Big Received">
+<input type="number" id="bigSold" placeholder="Big Sold">
+<input type="number" id="bigDead" placeholder="Big Dead">
+
+<input type="number" id="smallReceived" placeholder="Small Received">
+<input type="number" id="smallSold" placeholder="Small Sold">
+<input type="number" id="smallDead" placeholder="Small Dead">
+
+<input type="number" id="cash" placeholder="Cash">
+<input type="number" id="upi" placeholder="UPI">
+
+<button id="updateBtn">
+✅ Update Record
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="edit-record.js"></script>
+
+</body>
+</html>
+<script src="auth.js"></script>
+<script type="module" src="edit-record.js"></script>
