@@ -286,3 +286,11 @@ background:linear-gradient(45deg,#FFD700,#ffb300);
 font-weight:bold;
 cursor:pointer;
 }
+.maintained-by{
+    text-align:center;
+    margin-top:30px;
+    color:#ffd700;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1px;
+}
